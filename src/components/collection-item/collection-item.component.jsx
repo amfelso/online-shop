@@ -1,6 +1,6 @@
 import React from "react";
 import CustomButton from "../custom-button/custom-button.component";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { addItem } from "../../redux/cart/cart.actions";
 
 import "./collection-item.styles.scss";
