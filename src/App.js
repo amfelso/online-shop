@@ -14,15 +14,9 @@ import { checkUserSession } from "./redux/user/user.actions.js";
 import "./App.css";
 
 class App extends React.Component {
-  unsubscribeFromAuth = null;
-
   componentDidMount() {
     const { checkUserSession } = this.props;
     checkUserSession();
-  }
-
-  componentWillUnmount() {
-    this.unsubscribeFromAuth();
   }
 
   render() {
