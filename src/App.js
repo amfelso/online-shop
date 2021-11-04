@@ -41,6 +41,7 @@ const checkUserSessionHandler = () => dispatch(checkUserSession());
             }
           />
           <Route exact path="/checkout" component={CheckoutPage} />
+          <Route component={HomePage} />
         </Switch>
       </div>
     );
